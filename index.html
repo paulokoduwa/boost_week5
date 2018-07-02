@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>boost_week5 Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            height: 700px;
+            width: 25%;
+            background-color: #ecdfcd;
+            padding: 0;
+            margin: 0;
+            overflow: auto;
+            position: fixed;
+        }
+
+        li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+        }
+
+        li a.active {
+
+            background-color: #f6454f;
+            color: #ffffff;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #54b77e;
+            color: #ffffff;
+
+        }
+
+
+
+        .padding_left {
+            margin-left: 25%;
+            padding: 5px 16px;
+
+
+        }
+
+        div:columespan {
+
+            column-count: 3;
+            column-rule: 1px solid lightblue;
+            column-gap: 20px;
+            column-width: 100%;
+        }
+
+        .column {
+            width: 33.3%;
+            height: 300px;
+            float: left;
+            padding: 10px;
+
+        }
+
+        .column_footer {
+            width: 33.3%;
+
+            float: left;
+
+
+        }
+
+        .align_h2 {
+            text-align: center;
+            color: #f6454f;
+        }
+
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 10px;
+
+        }
+
+        .footer {
+            position: relative;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            background-color: #6ad9d9;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+            height: 120px;
+
+        }
+
+        .oxfordtop {
+            font-size: 34px;
+            font-family: Arial, sans-serif;
+            font-stretch: extra-expanded;
+            font-style: italic;
+            font-weight: bold;
+            margin: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- this div will contain the company logo and nav bar-->
+    <ul>
+        <li>
+
+            <a class="active" href="#home">
+                <img src="images.jpg" style="width:80px; height:30px; margin-right: 10px">Home</a>
+        </li>
+        <li>
+            <a href="#aboutus">About Us</a>
+        </li>
+    </ul>
+
+
+    <div class="padding_left">
+        <!--this will contain header photo-->
+        <div class="oxfordtop">
+            Welcome to Boxord Film Rental Services
+        </div>
+
+        <div>
+            <img src="film1.jpg" height="400px" width="100%" />
+        </div>
+        <div class="about">
+            <h1 id="aboutus">ABOUT US </h1>
+        </div>
+
+
+        <div class="row">
+            <div class="column">
+                <h2 class="align_h2">WHAT WE DO</h2>
+                <p style="text-align: center;">
+                    We distribute videos and audio firms aroud benin city
+                    <br> and her environs. We make sure theres always interesting movies
+                    <br> for our friends at home to watch
+
+                </p>
+            </div>
+            <div class="column">
+                <h2 class="align_h2">WHY WE ARE UNIQUE</h2>
+                <p style="text-align: center;">
+                    Everything we do at our film rental house is basically for our clients.
+                    <br> we make sure we offer them services that beats their imagination.
+                    <br>
+                </p>
+
+            </div>
+            <div class="column">
+                <h2 class="align_h2">CONTACT</h2>
+                <p style="text-align: center;">
+                    95 ojo street,
+                    <br> Aduwawa, Benin City
+                    <br> Edo state.
+                    <br>
+                    <a href="mailto:odionpaulokoduwa@gmail.com" target="_top">send us an email</a>
+                    <br>
+                    <a href="tel:2347038280622">2347038280622</a>
+
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <div class="footer">
+            <div class="row">
+                <div class="column_footer">
+                    <span style="color:maroon; font-weight: bold;">Movie of the week</span>
+                    <br>
+                    <p style="color:#ffffff">
+                        Children on runway
+                        <br> Dean of thives
+                        <br> Game checkout
+
+                    </p>
+
+                </div>
+                <div class="column_footer">
+                    <span style="color:maroon; font-weight: bold;">Best Fiction</span>
+
+                    <p style="color:#ffffff">
+                        Harry potter
+                        <br> Pirates of the Carribean
+                        <br> Chucky
+                    </p>
+
+                </div>
+                <div class="column_footer">
+                    <span style="color:maroon; font-weight: bold;">Best Horror movie</span>
+                    <p style="color:#ffffff">
+                        No Way Out
+                        <br> Walking Dead
+                        <br> Last Chucky
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
